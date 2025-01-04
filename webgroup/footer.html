@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Improved Responsive Footer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bfoot {
+            font-family: 'Poppins', sans-serif;
+            background-color: #90d076;
+            color: #fff;
+            /* padding: 20px 20px 0; */
+        }
+
+        .bfoot h6 {
+            color: #0d3b66;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .text1 {
+            color: #252525;
+            font-size: 18px;
+            margin-bottom: 05px;
+            line-height: 1.2rem;
+            
+        }
+        .bfoot p, .bfoot a {
+            color: #353535;
+            font-size: 15px;
+            line-height: 1.9;
+            text-decoration: none;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+
+        .bfoot a:hover {
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-container {
+            margin-left: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .footer-column {
+            flex: 1 1 calc(25% - 20px);
+            margin: 10px;
+            min-width: 220px;
+        }
+
+        .footer-column:last-child p {
+            margin: 10px 0;
+        }
+
+        .footer-bottom {
+            background-color: #53aa43;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 0px;
+            color: #fff;
+        }
+
+        .footer-bottom a {
+            color: #0e0e0e;
+            font-weight: bold;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-column {
+                flex: 1 1 100%;
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            .social-icons img {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bfoot">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h6>Study Hub</h6>
+                    <p class="text1">Organize your footer content effectively. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="social-icons">
+                       <a href="//google.com" target="_blank"> <img src="https://img.icons8.com/fluency/96/facebook-new.png" alt="Facebook"></a>
+                       <a href="//google.com" target="_blank"> <img src="https://img.icons8.com/fluency/96/youtube-play.png" alt="YouTube"> </a>
+                        <img src="https://img.icons8.com/color/96/linkedin.png" alt="LinkedIn">
+                        <img src="https://img.icons8.com/color/96/github.png" alt="GitHub">
+                        <img src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h6>Pages</h6>
+                    <p><a href="./index.php">Home</a></p>
+                    <p><a href="./aboutus.php">About Us</a></p>
+                    <p><a href="./contact.php">Contact Us</a></p>
+                    <p><a href="./views/auth/signup.php">Sign Up</a></p>
+                </div>
+                <div class="footer-column">
+                    <h6>Support</h6>
+                    <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=adminGroupAE@example.com&tf=cm" target="_blank">System Errors</a></p>
+                    <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=adminFeedbackGroupAE@example.com&tf=cm" target="_blank">User Feedback</a></p>
+        
+                    <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=adminReprtsGroupAE@example.com&tf=cm" target="_blank">Reports</a></p>
+                    <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=adminHelpAE@example.com&tf=cm"target="_blank">Help</a></p>
+                </div>
+                <div class="footer-column">
+                    <h6>Contact</h6>
+                    <p><i class="fas fa-home"></i> 345 Kadawatha, Sri Lanka</p>
+                    <p><i class="fas fa-envelope"></i> WebgroupAE@gmisl.com</p>
+                    <p><i class="fas fa-phone"></i> +01 234 567 88</p>
+                    <p><i class="fas fa-print"></i> +01 234 567 99</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Copyright: Web groupAE 
+                <a href="/localhost/Web_groupAE/webgroup/index.php">Study Hub</a>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>
